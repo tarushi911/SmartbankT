@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header p {
+    margin-top: 5px;
+    color: #cbd5e1;
+}
+
+.container {
+    width: 92%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, #2563eb, #0f172a);
+    color: white;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.balance-card h2 {
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 13px;
+    margin: 7px 0;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input, select {
+    border: 1px solid #cbd5e1;
+    background: white;
+}
+
+button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.logout {
+    width: auto;
+    background: #dc2626;
+    padding: 12px 18px;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 380px;
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px #00000012;
+}
+
+.login-box h1 {
+    color: #1d4ed8;
+    text-align: center;
+}
+
+.login-box > p {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.hint {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.success {
+    color: #15803d;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 430px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+th {
+    background: #f8fafc;
+}
+
+.reset {
+    background: #64748b;
+}
+
+.warning {
+    color: #64748b;
+    text-align: center;
+    font-size: 12px;
+    margin: 18px 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .balance-card h2 {
+        font-size: 28px;
+    }
+}
